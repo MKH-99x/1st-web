@@ -1,0 +1,112 @@
+*{   
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;   /*fix */
+}
+
+body,html{
+    height: 100%;
+    width: 100%;  /*fix */
+
+    background-image: url(/images/ing1.webp);
+    background-repeat: no;
+    background-position: center;
+    background-size: cover;
+
+/*perfect use of flex box*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+
+h1{
+    text-align: center;
+    
+}
+
+.box{
+    width: 400px;  /*new*/
+
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid aquamarine;
+    border-radius: 7px;
+    
+}
+
+.b{
+    margin-right: 5px;
+}
+
+.i{
+    width: 100%;  /*new*/
+
+    height: 30px;
+    padding: 2px;
+    margin: 5px 0;
+
+    border: none;
+    border-radius: 20px;
+    background-color: gainsboro;
+
+}
+
+.i:focus {
+    outline: none;  /*new*/
+}
+
+.l{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+.b2{
+    margin-bottom: 10px;
+}
+
+p,a{
+    font-size: 16px;
+    text-align: center;
+    
+}
+p{
+    color: aqua;
+}
+
+a{
+    text-decoration: none;   /*new*/
+}
+
+.b3{
+    margin-top: 10px;
+}
+
+.btn{
+    border: none;
+    border-radius: 7px;
+    width: 350px;
+    height: 35px;
+    margin: 3px 25px;
+    font-size: 15px;
+    background-color: blue;
+    color: white;
+}
+
+.btn:hover{
+    background-color: darkblue;
+    border: 2px solid aqua;
+}
+
+.m {
+    position: absolute; 
+    bottom: 50px;
+    left: 0;          /*marquee is inline becoz of position absolute block */
+    width: 100%;
+    padding: 5px;
+    background-color: aquamarine;
+}
